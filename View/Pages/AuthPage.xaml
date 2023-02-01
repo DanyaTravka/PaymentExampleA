@@ -1,0 +1,27 @@
+﻿<Page x:Class="PaymentExampleApp.View.Pages.AuthPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PaymentExampleApp.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AuthPage">
+
+        <Grid>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0, 0, 0, 10">
+                    <TextBlock FontSize="25" Margin="0, 0, 40, 0" Text="Имя пользователя"/>
+                    <ComboBox FontSize="25" Width="200" x:Name="UserComboBox" SelectionChanged="UserComboBox_SelectionChanged"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0, 0, 0, 25">
+                    <TextBlock FontFamily="25" Margin="0, 0, 40, 0" Text="Пароль" Width="208"/>
+                    <PasswordBox FontSize="25" Width="200" x:Name="UserPasswordBox" Password="sassas"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Content="Войти" FontSize="25" Margin="0, 0, 20, 0" Height="45" Width="100" x:Name="AuthButton" Click="AuthButton_Click"/>
+                    <Button Content="Выход" FontSize="25" Width="100" x:Name="ExitButton" Click="ExitButton_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+</Page>
